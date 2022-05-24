@@ -1,0 +1,21 @@
+Create a folder sequalize
+Create an app.js file
+In the folder sequalize Run command npm init -y
+In the folder sequalize Run command install sequelize tedious nodemon express body-parser
+
+Add the following lines of codes to app.js file
+
+const Express = require("express");
+
+const app = Express();
+const port = 8080;
+
+app.get("/", (req, res) => {
+	res.send("Home Page");
+});
+
+app.listen(port, () => {
+	console.log(`Listening on port http://localhost:${port}`);
+});
+
+In the folder sequalize Run command node app.js
